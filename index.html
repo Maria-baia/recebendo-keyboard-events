@@ -2,37 +2,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="style.css">
-<script>
-
-'use strict';
-let boxTop = 200;
-let boxLeft = 200;
-
-document.addEventListener('keydown', (event) => {
-  const keyName = event.key;
-  console.log('keydown event\n\n' + 'key: ' + keyName);
-  if(keyName === "ArrowUp"){
-    boxTop -= 10
-  }
-  document.getElementById("box").style.top = boxTop + "px";
-  
-  if(keyName === "ArrowLeft"){
-    boxLeft -= 10
-  }
-  document.getElementById("box").style.left = boxLeft + "px";
-  
-  if(keyName === "ArrowRight"){
-    boxLeft += 10
-  }
-  document.getElementById("box").style.left = boxLeft + "px";
-  
-  if(keyName === "ArrowDown"){
-    boxTop += 10
-  }
-  document.getElementById("box").style.top = boxTop + "px";
-});
-
-</script>
+<script src="script.js"></script>
 </head>
 <body>
     <img src="https://d2bsjm9patfdz0.cloudfront.net/images/0000899_brincadeiras-e-jogos.jpeg" alt="imagem aleatória" id="box">
